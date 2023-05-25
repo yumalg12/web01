@@ -1,17 +1,27 @@
+table{
+    table-layout: fixed;
+    width: 100%;
+    display: table;
+}
 
 table td:first-child {
 	border-left: 0;
-	background: lightblue;
+	background: #19A7CE;
 	color: white;
 	padding: 7px 20px;
 	border-radius: 10px;
+	width: 150px;
 }
 
 table td {
 	padding: 5px 15px;
-	border: 0.5px solid lightblue;
+	border: 0.5px solid #19A7CE;
 	border-radius: 10px;
 	background-color: white;
 }
 
+table img {
+	margin-top: 3px;
+	margin-bottom: -1px;
+}
 
