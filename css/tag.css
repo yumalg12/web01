@@ -1,0 +1,53 @@
+
+a {
+	color: navy;
+	text-decoration: none;
+}
+
+a:hover{
+     animation: hovergradation 5s infinite;
+}
+
+@keyframes hovergradation {
+     0% {color: cyan;}
+     50% {color: magenta;}
+     100% {color: yellow;}
+}
+
+img {
+	margin-top: 3px;
+	margin-bottom: -1px;
+}
+
+ol {
+	font-weight: bold;
+}
+
+
+h2 {
+	color: navy;
+	padding-top: 3px;
+}
+
+button {
+	padding: 7px 13px;
+	background: lightblue;
+	border: none;
+	border-radius: 50px;
+	font-size: 1rem;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+hr {
+	border: 1px solid #ddd;
+	width: 200px;
+	margin: -2px 0px 21px 3px;
+	display: block;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
