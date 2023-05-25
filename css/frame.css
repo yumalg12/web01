@@ -105,7 +105,7 @@ div[id="projects"]> .container {
 	
 div[id="projects"]> .container {
 		grid-template-columns: 1fr;
-		grid-row-gap: 30px;
+		grid-row-gap: 45px;
 	}
 	#contents {
 		display: block;

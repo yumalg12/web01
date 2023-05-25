@@ -19,6 +19,12 @@ h2 {
 	padding-top: 3px;
 }
 
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-block-start: 3px;
+}
+
 hr {
 	border: 1px solid #e5e5e5;
 	width: 200px;
