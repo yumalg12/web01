@@ -1,0 +1,66 @@
+body {
+	background-color: aliceblue;
+	color: #333;
+	padding: 3px 20px;
+}
+
+.subject {
+	color: lightblue;
+	background: white;
+	text-align: center;
+	border-radius: 50px;
+}
+
+.menu {
+	border-radius: 20px;
+	border: 1px solid skyblue;
+	color: skyblue;
+	padding: 10px 15px;
+}
+
+a {
+	color: navy;
+}
+
+h2 {
+	color: navy;
+	padding: 5px 12px;
+}
+
+table {
+	border-spacing: 0px;
+	border-radius: 10px 10px 0px 0px;
+	border: 0.5px solid lightblue;
+}
+
+th {
+	background: lightblue;
+	color: white;
+	padding: 7px;
+	font-size: 1.2rem;
+	border-radius: 10px 10px 0px 0px;
+}
+
+td {
+	padding: 5px 10px;
+	border: 0.5px solid lightblue;
+}
+
+input {
+	border: 1px solid skyblue;
+	border-radius: 50px;
+	padding: 5px 10px;
+	margin: 15px 5px;
+	font-size: 1.0rem;
+}
+
+button {
+    padding: 7px 13px;
+    background: lightblue;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
