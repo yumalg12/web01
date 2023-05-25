@@ -1,3 +1,4 @@
+
 #header {
 	width: 100%;
 	margin: 0px !important;
@@ -32,11 +33,11 @@ nav {
 	color: #19A7CE;
 	padding: 10px 15px;
 	line-height: 1.8;
-	margin: 32px 0px 35px 0px;
+	margin: 17px 0px 0px 0px;
 	font-weight: bold;
 }
 
-div[class="contents"]>div {
+div[id="contents"]>div {
 	background-color: white;
 	border-radius: 10px;
 	padding: 1px 25px 25px 25px;
@@ -58,3 +59,65 @@ footer {
 	height: 120px;
 	padding-block-start: 34px;
 }
+
+
+/** 반응형 웹 구현 **/
+
+#realbody {
+	padding: 3px 20px;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-column-gap: 25px;
+}
+
+@media (max-width: 1300px) {
+	#realbody {
+	grid-template-columns: 1fr;
+	grid-row-gap: 25px;
+	}
+	
+	nav {
+	margin: 25px 0px -10px 0px;
+	}
+}
+
+
+div[id="projects"]> .container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 30px;
+	}
+
+#projects {
+	grid-column: 1 / span 2;
+}
+
+#contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-column-gap: 15px;
+}
+
+
+@media (max-width : 970px) {
+	#projects {}
+	
+div[id="projects"]> .container {
+		grid-template-columns: 1fr;
+		grid-row-gap: 30px;
+	}
+	#contents {
+		display: block;
+	}
+}
+
+/** 와이드 해상도 대응 **/
+
+@media (min-width : 2200px) {
+
+div[id="projects"]> .container {
+		grid-template-columns: repeat(auto-fill, 30%);
+	}
+}
+
