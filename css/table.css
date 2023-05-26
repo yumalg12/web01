@@ -4,13 +4,24 @@ table{
     display: table;
 }
 
-table td:first-child {
+div[id="skills"]>table td:first-child {
 	border-left: 0;
 	background: #19A7CE;
 	color: white;
 	padding: 7px 20px;
 	border-radius: 10px;
-	width: 120px;
+	width: 80px;
+}
+
+
+div[id="projects"]> .container > .item > table td:first-child {
+	border-left: 0;
+	background: #19A7CE;
+	color: white;
+	padding: 7px 20px;
+	border-radius: 10px;
+	width: 25%;
+	max-width: 200px;
 }
 
 table td {

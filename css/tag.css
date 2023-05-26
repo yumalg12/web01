@@ -2,6 +2,7 @@
 a {
 	color: #146C94;
 	text-decoration: none;
+	word-wrap: break-word;
 }
 
 a:hover{
