@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <html><head>
 <meta charset="UTF-8">
 <title>YME Portfolio</title>
@@ -13,9 +15,7 @@
 </head>
 
 <body>
-	<div id="header" onclick="location.href='./index.html';">
-		<p style="font-size: 20pt; font-weight: bold; padding: 20px 30px; margin: 0px;">YME Portfolio</p>
-	</div>
+	<%@ include file="WEB-INF/views/header.jsp" %>
 
 	<div id="realbody">
 		<nav>
@@ -77,6 +77,51 @@
 				<h2>🗂️ Projects</h2>
 				<hr>
 				<div class="container">
+									<div class="item">
+						<h3>
+							<img src="https://img.shields.io/badge/Project-Personal-blue">
+							포트폴리오 페이지
+						</h3>
+						<table>
+							<tbody><tr>
+								<td><strong>참여자 (기여도)</strong></td>
+								<td>유맑음 (100%)</td>
+							</tr>
+							<tr>
+								<td><strong>기간</strong></td>
+								<td>2023. 05. 25 ~ 2023. 05. 26</td>
+							</tr>
+							<tr>
+								<td><strong>사용 기술</strong></td>
+								<td>JSP/HTML/CSS</td>
+							</tr>
+								<tr>
+									<td><strong>URL</strong></td>
+									<td><a href="">yumalg12.github.io/yme_portfolio</a></td>
+								</tr>
+								<tr>
+									<td><strong>주요 기능</strong></td>
+									<td><ul>
+											<li>반응형 웹페이지 구현<br>(조건 - min-width: 1300px, 970px,
+												max-width: 2200px)
+											</li>
+											<li>CSS로 원하는 디자인 구현</li>
+										</ul></td>
+								</tr>
+
+								<tr>
+									<td><strong>비고</strong></td>
+									<td>
+									<p>
+									grid만 사용해 반응형 웹을 만들고 싶었는데, 결국 익숙한 방식인 media query를 사용하게 되어서 아쉬웠다.<br>
+									</p>
+									<p>
+									a 링크 색상 애니메이션과 헤더 호버 애니메이션을 넣어 봤는데 생각한 대로 잘 작동해서 뿌듯했다.</td>
+									</p>
+								</tr>
+							</tbody></table>
+					</div>
+				
 					<div class="item">
 						<h3>
 							<img src="https://img.shields.io/badge/Project-Personal-blue">
@@ -96,6 +141,10 @@
 								<td>HTML/CSS, JavaScript</td>
 							</tr>
 							<tr>
+								<td><strong>URL</strong></td>
+								<td><a href="">github.com/yumalg12/dummyprojectA</a></td>
+							</tr>
+							<tr>
 								<td><strong>주요 기능</strong></td>
 								<td><ul>
 										<li>기능 1</li>
@@ -103,12 +152,11 @@
 										<li>기능 3</li>
 									</ul></td>
 							</tr>
-							<tr>
-								<td><strong>URL</strong></td>
-								<td><a href="">github.com/yumalg12/dummyprojectA</a></td>
-							</tr>
-
-						</tbody></table>
+								<tr>
+									<td><strong>비고</strong></td>
+									<td>어려웠던 점, 느낀 점 등등</td>
+								</tr>
+							</tbody></table>
 					</div>
 					
 					
@@ -131,6 +179,10 @@
 								<td>JAVA</td>
 							</tr>
 							<tr>
+								<td><strong>URL</strong></td>
+								<td><a href="">github.com/yumalg12/dummyprojectB</a></td>
+							</tr>
+							<tr>
 								<td><strong>주요 기능</strong></td>
 								<td><ul>
 										<li>기능 1</li>
@@ -138,11 +190,11 @@
 										<li>기능 3</li>
 									</ul></td>
 							</tr>
-							<tr>
-								<td><strong>URL</strong></td>
-								<td><a href="">github.com/yumalg12/dummyprojectB</a></td>
-							</tr>
-						</tbody></table>
+								<tr>
+									<td><strong>비고</strong></td>
+									<td>어려웠던 점, 느낀 점 등등</td>
+								</tr>
+							</tbody></table>
 					</div>
 					
 				</div>
@@ -152,12 +204,6 @@
 	</div>
 	<br>
 	<br>
-	<footer>	
-		<a href="https://github.com/yumalg12"><img src="./img/github.svg" style="filter: invert(1) brightness(2);" width="50px;"></a>
-		<span>&nbsp;</span>
-		<a href=""><img src="./img/linkedin.svg" style="filter: invert(1) brightness(2);" width="47px;"></a>
-		<p style="font-size: 0.9rem; line-height: 0.6;">ⓒ2023. Malg-Eum Yu. All right reserved.</p>
-		<a href="#"><img id="scrollTop" src="./img/scrollTop.svg"></a>
-	</footer>
+	<%@ include file="/WEB-INF/views/footer.jsp" %>
 
 </body></html>

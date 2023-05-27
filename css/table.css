@@ -35,7 +35,32 @@ div[id="projects"]> .container > .item > table td:first-child {
 
 table td {
 	padding: 5px 15px;
-	border: 0.5px solid #19A7CE;
+	border: 0.5px solid #ccc;
 	border-radius: 10px;
 	background-color: white;
+}
+
+
+tr:last-child>td:last-child {
+	padding: 1rem;
+    line-height: 1.5;
+}
+
+td>ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    padding-inline-start: 20px;
+}
+
+td>ul>li{
+	display: list-item;
+    text-align: -webkit-match-parent;
+    margin-bottom: 10px;
+}
+
+li:marker{
+	color: white;
+	border: 1px solid #146C94;
+	
 }
