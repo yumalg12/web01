@@ -11,8 +11,8 @@ a:hover{
 
 @keyframes hovergradation {
      0% {color: cyan;}
-     33% {color: magenta;}
-     66% {color: yellow;}
+     33.33333% {color: magenta;}
+     66.66667% {color: yellow;}
      100% {color: cyan;}
 }
 
@@ -42,14 +42,3 @@ label {
 div[id="projects"] img{
 	margin: 0px 0px -4px 5px;
 }
-
-#scrollTop {
-	position: fixed;
-	bottom: 30px;
-	right: 32px;
-	width: 50px;
-	opacity: 0.8;
-	border-radius: 50px;
-	box-shadow: 0px 3px 10px rgb(0,0,0,0.3);
-}
-
